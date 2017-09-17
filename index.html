@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="BandApp">
 <head>
     <title>The Monkees Bandpage</title>
     <base href="/">
@@ -7,26 +7,27 @@
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 </head>
-<header>
-	<h1>The Monkees Bandpage</h1>
-	<p>Everything Monkee, in one place!</p>
-	<nav>
-		<a href="#">Home</a>
-		<a href="#">Music</a>
-		<a href="#">About</a>
-		<a href="#">Contact</a>
-		<a href="#">Dates</a>
-		<a href="#">Photos</a>
-	</nav>
-</header>
 <body>
-	<img src="assets/images/cover3.jpg" alt="The Monkees outside dressed in red tops and blue jeans">
-	<h2>Monkees fans.. you're in the right place!</h2>
-	<ul>
-		<li>Listen to music online</li>
-		<li>Exclusive band photos</li>
-		<li>View consert/show dates</li>
-		<li>Book them for your own event!</li>
-	</ul>
+	<nav>
+		<div class="container">
+			<div>
+				<a href="/">The Monkees Bandpage</a>
+			</div>
+				<ul class="nav navbar-nav navbar-right">
+					<a href="/">Home</a>
+					<a href="/music">Music</a>
+					<a href="/about">About</a>
+					<a href="/contact">Contact</a>
+					<a href="/dates">Dates</a>
+					<a href="/photos">Photos</a>
+				</ul>
+		</div>
+	</nav>
+	<div ng-view>
+	<!-- Content injected here -->
+	</div>
+	<!-- Load external JS files here -->
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
 </body>
 </html>
