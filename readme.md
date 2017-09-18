@@ -16,10 +16,10 @@ This app will allow the user to view the bands media, view show dates, contact t
 ### Existing Features
 
 - A basic homepage
+- A basic looking (as yet) photo page
 
 ### Features Left to Implement
 
-- Display photos
 - Create band and members bio
 - Contact form and validation
 - Create show/dates page

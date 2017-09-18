@@ -21,5 +21,8 @@ angular.module('RouteControllers', [])
 	})
 
 	.controller('PhotosController', function($scope) {
-		$scope.title = "Photos Page"
+		$scope.title = "Photos"
+		
+		
+		
 	});
