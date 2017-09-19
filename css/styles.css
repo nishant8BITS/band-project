@@ -1,0 +1,29 @@
+body {
+	margin: 0 10px;
+}
+
+h1 {
+	color: red;
+}
+
+.push-right {
+	margin-left: 10px;
+}
+
+/* MEDIA QUERIES----
+------------------*/
+
+@media (max-width: 399px) {
+	.max-width-xs {
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 400px) {
+	.pull-left-sm {
+		float: left;
+		margin: 5px 15px 10px 5px;
+		width: 300px;
+	}
+}
+

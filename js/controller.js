@@ -1,7 +1,6 @@
 angular.module('RouteControllers', [])
 
 	.controller('HomeController', function($scope) {
-		$scope.title = "Home Page"
 	})
 
 	.controller('MusicController', function($scope) {
@@ -9,7 +8,6 @@ angular.module('RouteControllers', [])
 	})
 
 	.controller('AboutController', function($scope) {
-		$scope.title = "About Page"
 	})
 
 	.controller('ContactController', function($scope) {
@@ -21,8 +19,4 @@ angular.module('RouteControllers', [])
 	})
 
 	.controller('PhotosController', function($scope) {
-		$scope.title = "Photos"
-		
-		
-		
 	});
