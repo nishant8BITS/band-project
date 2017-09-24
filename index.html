@@ -7,14 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Chewy|Patrick+Hand" rel="stylesheet">
 </head>
-<body>
+<header>
 	<nav>
 		<div class="container">
 			<div>
-				<a href="/"><h1>The Monkee's Bandpage</h1></a>
+				<h1>The Monkee's Bandpage</h1>
 				<p>Everything Monkee, in one place!</p>
-			</div>
+			</div class="row">
 				<ul class="nav navbar-nav navbar-right">
 					<a href="/">Home</a>
 					<a href="/music">Music</a>
@@ -23,7 +24,10 @@
 					<a href="/contact">Contact</a>
 					<a href="/about">About</a>
 				</ul>
+			</div>
 		</div>
+</header>
+<body>
 	</nav>
 	<div ng-view>
 	<!-- Content injected here -->

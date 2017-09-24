@@ -33,4 +33,3 @@ angular.module('BandApp').config(function($locationProvider, $routeProvider) {
 		controller: 'PhotosController'
 	});
 });
-

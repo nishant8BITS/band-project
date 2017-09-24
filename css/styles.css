@@ -1,25 +1,82 @@
-body {
+header {
+	margin: 0 10px 20px 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px #a00 solid;
+	font-family: 'Chewy', cursive;
+}
+
+body, main {
 	margin: 0 10px;
 }
 
 h1 {
-	color: red;
+	font-family: 'Chewy', cursive;
+	color: #a00;
+	font-size: 8rem;
+}
+
+p, a, li {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 2rem;	
+}
+
+.nav a {
+	background: #a00;
+	color: white;
+	padding: 0 6px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	background: #d00;
+}
+
+audio + p {
+  border-top: 1px solid #a00;
+}
+
+iframe {
+	max-width: 100%;
 }
 
 .push-right {
 	margin-left: 10px;
 }
 
-/* MEDIA QUERIES----
+.details-box {
+	border: 1px solid black;
+}
+
+/* /home view 
+------------------*/
+.home-main-image {
+	width: 100%;
+}
+
+/* /about view 
+------------------*/
+
+.profile-img {
+	border-radius: 10%;
+	border: 5px dashed #a00;
+}
+
+
+/* MEDIA QUERIES
 ------------------*/
 
 @media (max-width: 399px) {
 	.max-width-xs {
 		max-width: 100%;
 	}
+	h1 {
+		font-size: 5rem;
+		text-align: center;
+	}
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) { /*Custom pull left when small class*/
 	.pull-left-sm {
 		float: left;
 		margin: 5px 15px 10px 5px;

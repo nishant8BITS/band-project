@@ -15,17 +15,19 @@ This app will allow the user to view the bands media, view show dates, contact t
 
 ### Existing Features
 
-- A basic homepage
-- A basic looking (as yet) photo page
-- A basic about page
+- A homepage (more content required)
+- A photo page
+- An about page
+- A music page
+- Created contact form and validation 
 
 ### Features Left to Implement
 
 - On the about page, create interactivity so the user can click a member's photo and view their bio on mid to large screens
-- Contact form and validation
+- Include social media links (on the homepage and footer?)
 - Create show/dates page
 - Add a facts section to the homepage
-- Create the music page adding music and video both from the assets and externaly.
+- Create a footer with copyright info, social media links etc
 
 ## What technology are we using
 
