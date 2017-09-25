@@ -30,3 +30,8 @@ angular.module('RouteControllers', [])
 			photos[i].style.backgroundColor = "#a00";
 		}
 	});
+
+angular.module('UtilityControllers', [])
+	.controller('footerController', function($scope){
+		$scope.currentYear = (new Date()).getFullYear();
+	});

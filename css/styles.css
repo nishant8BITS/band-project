@@ -1,3 +1,5 @@
+/* Elements 
+------------------*/
 header {
 	margin: 0 10px 20px 10px;
 	padding-bottom: 10px;
@@ -5,8 +7,22 @@ header {
 	font-family: 'Chewy', cursive;
 }
 
+footer {
+	margin: 20px 10px 0 10px;
+	padding-top: 10px;
+	border-top: 2px #a00 solid;
+	font-family: 'Chewy', cursive;
+}
+
 body, main {
 	margin: 0 10px;
+}
+
+footer {
+	margin: 20px 10px 0 10px;
+	padding-top: 10px;
+	border-top: 2px #a00 solid;
+	font-family: 'Chewy', cursive;
 }
 
 h1 {
@@ -20,15 +36,7 @@ p, a, li {
 	font-size: 2rem;	
 }
 
-.nav a {
-	background: #a00;
-	color: white;
-	padding: 0 6px;
-	border-radius: 6px;
-	text-decoration: none;
-}
-
-.nav a:hover {
+nav a:hover {
 	background: #d00;
 }
 
@@ -40,6 +48,9 @@ iframe {
 	max-width: 100%;
 }
 
+/* Classes 
+------------------*/
+
 .push-right {
 	margin-left: 10px;
 }
@@ -48,20 +59,35 @@ iframe {
 	border: 1px solid black;
 }
 
-/* /home view 
+.nav a {
+	background: #a00;
+	color: white;
+	padding: 0 6px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+/* ---ANGULAR VIEWS--- 
 ------------------*/
+  /* home 
+  ------------------*/
 .home-main-image {
 	width: 100%;
 }
 
-/* /about view 
-------------------*/
+  /* about 
+  ------------------*/
 
 .profile-img {
 	border-radius: 10%;
 	border: 5px dashed #a00;
 }
 
+/* Overiding Font Awesome Icons
+------------------*/
+.fa {
+	font-size: 25px;
+}
 
 /* MEDIA QUERIES
 ------------------*/
@@ -83,4 +109,6 @@ iframe {
 		width: 300px;
 	}
 }
+
+
 

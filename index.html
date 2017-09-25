@@ -3,6 +3,7 @@
 <head>
     <title>The Monkee's Bandpage</title>
     <base href="/">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
@@ -10,30 +11,48 @@
 	<link href="https://fonts.googleapis.com/css?family=Chewy|Patrick+Hand" rel="stylesheet">
 </head>
 <header>
-	<nav>
-		<div class="container">
-			<div>
-				<h1>The Monkee's Bandpage</h1>
-				<p>Everything Monkee, in one place!</p>
-			</div class="row">
-				<ul class="nav navbar-nav navbar-right">
-					<a href="/">Home</a>
-					<a href="/music">Music</a>
-					<a href="/photos">Photos</a>
-					<a href="/dates">Dates</a>
-					<a href="/contact">Contact</a>
-					<a href="/about">About</a>
-				</ul>
-			</div>
+	<div class="container">
+			<h1>The Monkee's Bandpage</h1>
+			<p>Everything Monkee, in one place!</p>
+		<div class="row">
+		<nav>
+			<ul class="nav navbar-nav navbar-right">
+				<a href="/">Home</a>
+				<a href="/music">Music</a>
+				<a href="/photos">Photos</a>
+				<a href="/dates">Dates</a>
+				<a href="/contact">Contact</a>
+				<a href="/about">About</a>
+			</ul>
+		</nav>
+		<nav>
+			<ul class="nav navbar-nav navbar-left">
+				<a href="https://www.facebook.com/TheMonkees/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/themonkees?lang=en" class="fa fa-twitter"></a>
+				<a href="https://www.youtube.com/user/themonkees" class="fa fa-youtube"></a>
+			</ul>
+		</nav>
 		</div>
+	</div>
 </header>
 <body>
-	</nav>
 	<div ng-view>
 	<!-- Content injected here -->
 	</div>
-	<!-- Load external JS files here -->
 	<script src="js/app.js"></script>
 	<script src="js/controller.js"></script>
 </body>
+<footer ng-controller="footerController" >
+	<!-- JS scripts loaded below -->
+	<div class="row">
+		<p class="col-sm-6">&copy; Daniel Deiana {{ currentYear }}</p>
+		<nav class="col-sm-6">
+			<ul class="nav navbar-nav">
+				<a href="https://www.facebook.com/TheMonkees/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/themonkees?lang=en" class="fa fa-twitter"></a>
+				<a href="https://www.youtube.com/user/themonkees" class="fa fa-youtube"></a>
+			</ul>
+		</nav>
+	</div>
+</footer>
 </html>

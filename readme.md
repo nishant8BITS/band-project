@@ -19,7 +19,7 @@ This app will allow the user to view the bands media, view show dates, contact t
 - A photo page
 - An about page
 - A music page
-- Created contact form and validation 
+- Created contact form and validationz 
 
 ### Features Left to Implement
 
