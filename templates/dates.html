@@ -1,1 +1,10 @@
-<h2>title:{{ title }}</h2>
+<div class="row">
+	<div class="col-sm-3">
+		<div ng-repeat="show in shows" class="show-display">
+			<p>{{ show.date }}</p>
+			<p>{{ show.venue }}</p>
+			<p>{{ show.city }}</p>
+			<p>{{ show.country }}</p>
+		</div>
+	</div>
+</div>

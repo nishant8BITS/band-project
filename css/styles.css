@@ -55,16 +55,24 @@ iframe {
 	margin-left: 10px;
 }
 
-.details-box {
-	border: 1px solid black;
-}
-
 .nav a {
 	background: #a00;
 	color: white;
 	padding: 0 6px;
 	border-radius: 6px;
 	text-decoration: none;
+}
+
+.clickable {
+	background: #d44;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+}
+
+.clickable:hover {
+	background: #e55;
 }
 
 /* ---ANGULAR VIEWS--- 
@@ -80,13 +88,49 @@ iframe {
 
 .profile-img {
 	border-radius: 10%;
-	border: 5px dashed #a00;
 }
 
-/* Overiding Font Awesome Icons
+  /* Diffrent ways to view the band members profiles depending on screensize. 
+	borrowing Bootstrap's 768px sm breakpoint rule */
+@media (max-width: 768px) {
+	.hide-sm {
+		display: none;
+	}
+}
+
+@media (min-width: 769px) {
+	.hide-md {
+		display: none;
+	}
+}
+
+  /* dates 
+  ------------------*/
+
+.show-display {
+	border-bottom: 2px dotted #a00;
+	text-align: center;
+}
+
+.show-display:last-child {
+	border-bottom: none;
+}
+
+  /* contact 
+  ------------------*/
+
+.details-box {
+	border: 1px solid black;
+}
+
+/* Font Awesome Icons styling
 ------------------*/
-.fa {
+.social-icon {
 	font-size: 25px;
+}
+
+.chevron-down {
+	font-size: 15px;
 }
 
 /* MEDIA QUERIES

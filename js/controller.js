@@ -6,7 +6,17 @@ angular.module('RouteControllers', [])
 	.controller('MusicController', function() {
 	})
 
-	.controller('AboutController', function() {
+	.controller('AboutController', function($scope) {
+		var petesBio = document.getElementById('petes-bio');
+		
+		$scope.toggleProfile = function(event){
+			var bio = event.target.nextElementSibling;
+			if (bio.style.display === 'none') {
+				bio.style.display = 'block';
+			} else {
+				bio.style.display = 'none';
+			}
+		}
 	})
 
 	.controller('ContactController', function($scope, $location) {
@@ -19,10 +29,10 @@ angular.module('RouteControllers', [])
 		}		
 	})
 
-	.controller('DatesController', function($scope) {
-		$scope.title = "Dates Page"
+	.controller('DatesController', function($scope, Dates) {
+		$scope.shows = Dates.getDates;
 	})
-
+	
 	/*Work in progress. I want the photos to generate random borders and colours per refresh*/
 	.controller('PhotosController', function($scope) {
 		var photos = document.getElementsByTagName('img');
