@@ -1,4 +1,4 @@
-angular.module('BandApp', ['ngRoute', 'RouteControllers', 'UtilityControllers', 'DatesService']);
+angular.module('BandApp', ['ngRoute', 'RouteControllers', 'UtilityControllers', 'DatesService', 'FactsService']);
 
 angular.module('BandApp').config(function($locationProvider, $routeProvider) {
 	$locationProvider.html5Mode(true);

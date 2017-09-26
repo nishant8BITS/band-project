@@ -83,6 +83,13 @@ iframe {
 	width: 100%;
 }
 
+.random-fact {
+	border: 2px solid #aa0;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	border-radius: 10px;
+}
+
   /* about 
   ------------------*/
 
