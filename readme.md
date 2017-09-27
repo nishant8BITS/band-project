@@ -20,11 +20,12 @@ This app will allow the user to view the bands media, view show dates, contact t
 - An about page
 - A music page
 - Created contact form and validation
-- show/dates page
+- Show/dates page
+- Facts section added
 
-### Features Left to Implement
+### Todo
 
-- Add a facts section to the homepage
+-Unit testing
 
 ## What technology are we using
 

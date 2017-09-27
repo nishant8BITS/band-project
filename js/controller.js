@@ -1,9 +1,11 @@
 angular.module('RouteControllers', [])
 
-	.controller('HomeController', function($scope, Facts) {
+	.controller('HomeController', function($scope, Facts, Dates) {
 		var facts = Facts.facts;
 		var randomFact = facts[Math.floor(Math.random()*facts.length)];
 		$scope.fact = randomFact;
+		
+		$scope.threeShows = Dates.getDates.slice(0,3);
 	})
 
 	.controller('MusicController', function() {
