@@ -23,7 +23,6 @@ angular.module('DatesService', [])
 });
 
 angular.module('FactsService', [])
-
 .service('Facts', function () {
 	this.facts = [
 		'Only Peter and Micky appear in every episode of the TV show',

@@ -8,9 +8,9 @@ angular.module('RouteControllers', [])
 		$scope.threeShows = Dates.getDates.slice(0,3);
 	})
 
-	.controller('MusicController', function() {
+	.controller('MusicController', function($scope) {
 	})
-
+	
 	.controller('AboutController', function($scope) {
 		var petesBio = document.getElementById('petes-bio');
 		

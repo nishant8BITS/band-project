@@ -2,47 +2,56 @@
 	<p><strong>Did you know?</strong> <i class="fa fa-lightbulb-o" aria-hidden="true"></i> {{ fact }}</p>
 </aside>
 
+<div class=row>
+	<main class="col-md-4">
+		<h2>Monkee's fans.. you're in the right place!</h2>
+		<ul>
+			<li>Listen to <a href="/music">music</a> online</li>
+			<li>Exclusive band <a href="/photos">photos</a></li>
+			<li>View show <a href="/dates">dates</a></li>
+			<li><a href="/contact">Book them</a> for your own event!</li>
+		</ul>
+		<p>Wether you're a bonefied Monkee looking to relive some of their greatest hits, 
+		or you're swinging over for the first time to <a href="/about">learn more</a>, there's plenty of content 
+		to keep you busy!</p>
+	</main>
+	<figure class="col-md-4">
+		<img src="assets/images/cover3.jpg" alt="The Monkees, outside, dressed in red tops and blue jeans." class="home-image">
+		<figcaption><a href="/photos">View photo album</a></figcaption>
+	</figure>
+	<article class="col-md-4">
+		<h2>The Monkees could be performing at your event!</h2>
+		<p>The Monkees would like to announce their availability for Christmas parties, weddings, Birthdays
+		or any special event you can think of. Just fill out the <a href="/contact">contact form</a> and submit
+		your request for a quote</p>
+		<h4><a href="/contact">Get a quote</a></h4>
+	</article>
+</div>
 
-<main>
-	<h2>Monkee's fans.. you're in the right place!</h2>
-	<ul>
-		<li>Listen to <a href="/music">music</a> online</li>
-		<li>Exclusive band <a href="/photos">photos</a></li>
-		<li>View show <a href="/dates">dates</a></li>
-		<li><a href="/contact">Book them</a> for your own event!</li>
-	</ul>
-	<p>Wether you're a bonefied Monkee looking to relive some of their greatest hits, 
-	or you're swinging over for the first time to <a href="/about">learn more</a>, there's plenty of content 
-	to keep you busy!</p> 
-</main>
+<div class="row">
+	<article class="col-sm-4">
+		<h2>Shows</h2>
+		<div class="show-display" ng-repeat="show in threeShows">
+			<p><strong>{{ show.venue }}</strong><p>
+			<p>{{ show.date }}</p>
+		</div>
+		<h4><a href="/dates">View all shows</a></h3>
+	</article>
 
-<figure>
-  <img src="assets/images/cover3.jpg" alt="The Monkees, outside, dressed in red tops and blue jeans.">
-  <figcaption><a href="/photos">View photo album</a></figcaption>
-</figure>
+	<article class="col-sm-4">
+		<h2>About</h2>
+		<p>The Monkees are a rock/pop group formed in 1965 to compliment an American situation comedy sitcom 
+		by the same name. Created in Los Angeles, the band at most comprised of four members: Peter Tork, 
+		Micky Dolenz, Davy Jones and Michael Nesmith and have been active intermitently to this day!</p>
+		<h4><a href="/about">Read more</a></h3>
+	</article>
 
-<article>
-	<h2>The Monkees could be performing at your event!</h2>
-	<p>The Monkees would like to announce their availability for Christmas parties, weddings, Birthdays
-	or any special event you can think of. Just fill out the <a href="/contact">contact form</a> and submit
-	your request for a quote</p>
-	<h4><a href="/contact">Get a quote</a></h3>
-</article>
-
-<article>
-	<h2>Shows</h2>
-	<div ng-repeat="show in threeShows">
-		<h3>{{ show.venue }}</h3>
-		<p>{{ show.date }}</p>
-	</div>
-	<h4><a href="/dates">View all shows</a></h3>
-</article>
-
-<article>
-	<h2>About</h2>
-	<p>The Monkees are a rock/pop group formed in 1965 to compliment an American situation comedy sitcom 
-	by the same name. Created in Los Angeles, the band at most comprised of four members: Peter Tork, 
-	Micky Dolenz, Davy Jones and Michael Nesmith and have been active intermitently to this day!</p>
-	<h4><a href="/about">Read more</a></h3>
-</article>
-
+	<article class="col-sm-4">
+		<h3>Clarksville</h3>
+		<audio controls="controls" controlsList="nodownload">
+			Your browser does not support the <code>audio</code> element.
+			<source src="../assets/audio/Clarksville.mp3" type="audio/mp3">
+		</audio>
+		<h4><a href="/music">View all music</a></h4>
+	</article>
+</div>

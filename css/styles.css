@@ -1,45 +1,75 @@
 /* Elements 
 ------------------*/
+.main-content {
+	margin: 0 20px;
+}
+
 header {
-	margin: 0 10px 20px 10px;
-	padding-bottom: 10px;
+	background: #A00;
+	color: #fff;
 	border-bottom: 2px #a00 solid;
 	font-family: 'Chewy', cursive;
+	border-radius: 0 0 10px 10px ;
 }
 
 footer {
-	margin: 20px 10px 0 10px;
+	background: #A00;
+	color: #fff;
+	margin: 20px 0 0 0;
 	padding-top: 10px;
 	border-top: 2px #a00 solid;
 	font-family: 'Chewy', cursive;
+	border-radius: 10px 10px 0 0;
 }
 
-body, main {
-	margin: 0 10px;
-}
-
-article {
-	border: 2px solid #a00;
-	border-radius: 10px;
-	margin: 10px;
-	padding: 10px;
-}
-
-footer {
-	margin: 20px 10px 0 10px;
-	padding-top: 10px;
-	border-top: 2px #a00 solid;
-	font-family: 'Chewy', cursive;
+body {
+	background-image: url("../assets/images/monkees_logo.jpg");
 }
 
 h1 {
-	font-family: 'Chewy', cursive;
-	color: #a00;
 	font-size: 8rem;
 }
 
 h2 {
 	font-family: 'Chewy', cursive;
+	color: #A00;
+}
+
+a {
+	color: #C00;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+
+article {
+	background-color: rgba(150, 0, 0, 0.7);
+	color: white;
+	border: 2px solid #a00;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px 0;
+}
+
+article h2 {
+	color: white;
+}
+
+article a {
+	color: #fff;
+}
+
+article a:hover {
+	color: #faa;
+	text-decoration: none;
+}
+
+aside {
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;	
 }
 
 p, a, li {
@@ -61,15 +91,20 @@ iframe {
 
 /* Classes 
 ------------------*/
+.everything-monkee {
+	font-family: 'Chewy', cursive;
+	font-size: 2.5rem;
+}
 
 .push-right {
 	margin-left: 10px;
 }
 
-.nav a {
+nav a {
 	background: #a00;
 	color: white;
 	padding: 0 6px;
+	border: 2px solid #FFF;
 	border-radius: 6px;
 	text-decoration: none;
 }
@@ -95,10 +130,17 @@ iframe {
 }
 
 .random-fact {
+	background: rgba(150, 150, 0, 0.9);
 	border: 2px solid #aa0;
-	margin-bottom: 10px;
-	padding-left: 20px;
-	border-radius: 10px;
+	color: white;
+	padding: 0 10px;
+}
+
+.home-image {
+	border-radius: 5px;
+	width: 90%;
+	display: block;
+	margin: auto;
 }
 
   /* about 
@@ -141,10 +183,19 @@ iframe {
 	border: 1px solid black;
 }
 
+  /* audio
+  ------------------*/
+.audio-window {
+	border: 2px solid #a00;
+	border-radius: 10px;
+}
+  
+  
 /* Font Awesome Icons styling
 ------------------*/
 .social-icon {
 	font-size: 25px;
+	border: none;
 }
 
 .chevron-down {
@@ -155,20 +206,50 @@ iframe {
 ------------------*/
 
 @media (max-width: 399px) {
+	.random-fact p {
+		font-size: 1.7rem;
+		line-height: 90%;
+	}
+	.random-fact {
+		margin-top: -20px;
+	}
+	header .socials {
+		display: none;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	.everything-monkee {
+		font-size: 2rem;
+	}
+	main {
+		margin-top: none;
+	}
 	.max-width-xs {
 		max-width: 100%;
 	}
-	h1 {
-		font-size: 5rem;
-		text-align: center;
+	audio {
+		max-width: 100%;
+			
 	}
 }
 
-@media (min-width: 400px) { /*Custom pull left when small class*/
+@media (min-width: 400px) {
+	header .socials {
+		text-align: right;
+		margin: -10px 10px -10px 0;
+	}
+	
 	.pull-left-sm {
 		float: left;
 		margin: 5px 15px 10px 5px;
 		width: 300px;
+	}
+}
+
+@media (min-width: 458px) {
+	header .socials {
+		margin: 0 10px -10px 0;
 	}
 }
 
